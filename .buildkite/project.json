@@ -1,23 +1,31 @@
 {
   "name": "Dependent Pipeline Example",
-  "env": {
-    "TRIGGER_API_ACCESS_TOKEN": "change-me",
-    "TRIGGER_ORG_SLUG": "change-me",
-    "TRIGGER_PIPELINE_SLUG": "change-me",
-    "TRIGGER_COMMIT": "change-me",
-    "TRIGGER_BRANCH": "change-me",
-    "TRIGGER_MESSAGE": "message"
-  },
   "steps": [
     {
       "type": "script",
       "name": "Trigger async",
-      "command": "trigger_async.sh"
+      "command": "trigger_async.sh",
+      "env": {
+        "TRIGGER_API_ACCESS_TOKEN": "change-me",
+        "TRIGGER_ORG_SLUG": "change-me",
+        "TRIGGER_PIPELINE_SLUG": "change-me",
+        "TRIGGER_COMMIT": "change-me",
+        "TRIGGER_BRANCH": "change-me",
+        "TRIGGER_MESSAGE": "message"
+      }
     },
     {
       "type": "script",
       "name": "Trigger sync",
-      "command": "trigger_sync.sh"
+      "command": "trigger_sync.sh",
+      "env": {
+        "TRIGGER_API_ACCESS_TOKEN": "change-me",
+        "TRIGGER_ORG_SLUG": "change-me",
+        "TRIGGER_PIPELINE_SLUG": "change-me",
+        "TRIGGER_COMMIT": "change-me",
+        "TRIGGER_BRANCH": "change-me",
+        "TRIGGER_MESSAGE": "message"
+      }
     }
   ]
 }
