@@ -1,12 +1,14 @@
 {
   "name": "Dependent Pipeline Example",
+  "env": {
+    "TRIGGER_API_ACCESS_TOKEN": "change-me",
+  },
   "steps": [
     {
       "type": "script",
       "name": ":bow_and_arrow: Trigger async",
       "command": "trigger_async.sh",
       "env": {
-        "TRIGGER_API_ACCESS_TOKEN": "change-me",
         "TRIGGER_ORG_SLUG": "change-me",
         "TRIGGER_PIPELINE_SLUG": "change-me",
         "TRIGGER_COMMIT": "HEAD",
@@ -19,7 +21,6 @@
       "name": ":bow_and_arrow: Trigger sync",
       "command": "trigger_sync.sh",
       "env": {
-        "TRIGGER_API_ACCESS_TOKEN": "change-me",
         "TRIGGER_ORG_SLUG": "change-me",
         "TRIGGER_PIPELINE_SLUG": "change-me",
         "TRIGGER_COMMIT": "HEAD",
