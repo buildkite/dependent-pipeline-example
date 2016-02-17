@@ -9,9 +9,9 @@
         "TRIGGER_API_ACCESS_TOKEN": "change-me",
         "TRIGGER_ORG_SLUG": "change-me",
         "TRIGGER_PIPELINE_SLUG": "change-me",
-        "TRIGGER_COMMIT": "change-me",
-        "TRIGGER_BRANCH": "change-me",
-        "TRIGGER_MESSAGE": "message"
+        "TRIGGER_COMMIT": "HEAD",
+        "TRIGGER_BRANCH": "master",
+        "TRIGGER_MESSAGE": "Oh hai :wave:"
       }
     },
     {
@@ -22,9 +22,9 @@
         "TRIGGER_API_ACCESS_TOKEN": "change-me",
         "TRIGGER_ORG_SLUG": "change-me",
         "TRIGGER_PIPELINE_SLUG": "change-me",
-        "TRIGGER_COMMIT": "change-me",
-        "TRIGGER_BRANCH": "change-me",
-        "TRIGGER_MESSAGE": "message"
+        "TRIGGER_COMMIT": "HEAD",
+        "TRIGGER_BRANCH": "master",
+        "TRIGGER_MESSAGE": "Oh hai :wave:"
       }
     }
   ]
