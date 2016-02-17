@@ -1,7 +1,7 @@
 {
   "name": "Dependent Pipeline Example",
   "env": {
-    "TRIGGER_API_ACCESS_TOKEN": "change-me",
+    "TRIGGER_API_ACCESS_TOKEN": "change-me"
   },
   "steps": [
     {
