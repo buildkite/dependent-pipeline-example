@@ -3,7 +3,7 @@
   "steps": [
     {
       "type": "script",
-      "name": "Trigger async",
+      "name": ":bow_and_arrow: Trigger async",
       "command": "trigger_async.sh",
       "env": {
         "TRIGGER_API_ACCESS_TOKEN": "change-me",
@@ -16,7 +16,7 @@
     },
     {
       "type": "script",
-      "name": "Trigger sync",
+      "name": ":bow_and_arrow: Trigger sync",
       "command": "trigger_sync.sh",
       "env": {
         "TRIGGER_API_ACCESS_TOKEN": "change-me",
