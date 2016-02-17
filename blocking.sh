@@ -2,6 +2,10 @@
 
 set -euo pipefail
 
+[[ "$TRIGGER_API_ACCESS_TOKEN" == "change-me" ]] && echo "You need to set \$TRIGGER_API_ACCESS_TOKEN" && exit 1
+[[ "$TRIGGER_ORG_SLUG" == "change-me" ]] && echo "You need to set \$TRIGGER_ORG_SLUG" && exit 1
+[[ "$TRIGGER_PIPELINE_SLUG" == "change-me" ]] && echo "You need to set \$TRIGGER_PIPELINE_SLUG" && exit 1
+
 echo "--- :package: Creating a build"
 
 NEW_BUILD_JSON=$(
