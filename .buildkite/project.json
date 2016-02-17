@@ -6,8 +6,8 @@
   "steps": [
     {
       "type": "script",
-      "name": ":bow_and_arrow: Async",
-      "command": "trigger_async.sh",
+      "name": ":runner: Non-blocking build",
+      "command": "trigger_non_blocking.sh",
       "env": {
         "TRIGGER_ORG_SLUG": "change-me",
         "TRIGGER_PIPELINE_SLUG": "change-me",
@@ -18,8 +18,8 @@
     },
     {
       "type": "script",
-      "name": ":bow_and_arrow: Sync",
-      "command": "trigger_sync.sh",
+      "name": ":raising_hand: Blocking build",
+      "command": "trigger_blocking.sh",
       "env": {
         "TRIGGER_ORG_SLUG": "change-me",
         "TRIGGER_PIPELINE_SLUG": "change-me",

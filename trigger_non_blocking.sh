@@ -2,8 +2,6 @@
 
 set -eu
 
-echo "POSTing to https://api.buildkite.com/v2/organizations/${TRIGGER_ORG_SLUG}/pipelines/${TRIGGER_PIPELINE_SLUG}/builds"
-
 curl \
   "https://api.buildkite.com/v2/organizations/${TRIGGER_ORG_SLUG}/pipelines/${TRIGGER_PIPELINE_SLUG}/builds" \
   -X POST \
