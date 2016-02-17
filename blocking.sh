@@ -43,7 +43,7 @@ do
   sleep 5
 done
 
-if [[ "$BUILD_STATE" == "success" ]]; then
+if [[ "$BUILD_STATE" == "passed" ]]; then
   echo "+++ :thumbsup: Build was a great success"
   exit 0
 else

@@ -7,7 +7,7 @@
     {
       "type": "script",
       "name": ":runner: Non-blocking build",
-      "command": "trigger_non_blocking.sh",
+      "command": "non_blocking.sh",
       "env": {
         "TRIGGER_ORG_SLUG": "change-me",
         "TRIGGER_PIPELINE_SLUG": "change-me",
@@ -19,7 +19,7 @@
     {
       "type": "script",
       "name": ":raising_hand: Blocking build",
-      "command": "trigger_blocking.sh",
+      "command": "blocking.sh",
       "env": {
         "TRIGGER_ORG_SLUG": "change-me",
         "TRIGGER_PIPELINE_SLUG": "change-me",
