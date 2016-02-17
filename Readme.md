@@ -6,10 +6,10 @@ This repository is an example [Buildkite](https://buildkite.com/) pipeline that 
 
 There are two example steps:
 
-* [blocking.sh](blocking.sh) - this creates a build and waits for it to finish. The step will pass only if the other build passes.
 * [non_blocking.sh](non_blocking.sh) - this creates anoter build and returns a success
+* [blocking.sh](blocking.sh) - this creates a build and waits for it to finish. The step will pass only if the other build passes.
 
-## Screenshot
+### Screenshot
 
 <img src="screenshot.png" alt="Screenshot of a dependent pipeline build" width="454" height="603">
 
