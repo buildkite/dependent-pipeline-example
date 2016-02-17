@@ -9,6 +9,10 @@ There are two example steps:
 * [non_blocking.sh](non_blocking.sh) - this creates anoter build and returns a success
 * [blocking.sh](blocking.sh) - this creates a build and waits for it to finish. The step will pass only if the other build passes.
 
+## Screenshot
+
+<img src="screenshot.png" alt="Screenshot of a dependent pipeline build" width="454" height="603">
+
 ## Environment variables
 
 These steps require the following environment variables to be set:
@@ -19,10 +23,6 @@ These steps require the following environment variables to be set:
 * `TRIGGER_COMMIT` - the commit for the build (e.g. `HEAD`)
 * `TRIGGER_BRANCH` - the branch for the build (e.g. `master`)
 * `TRIGGER_MESSAGE` - the message for the build (e.g. `Oh hai :wave:`)
-
-### Screenshot
-
-<img src="screenshot.png" alt="Screenshot of a dependent pipeline build" width="454" height="603">
 
 ## License
 
