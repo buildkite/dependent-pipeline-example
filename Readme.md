@@ -17,7 +17,7 @@ There are two example steps:
 
 These steps require the following environment variables to be set:
 
-* `TRIGGER_API_ACCESS_TOKEN` - a Buildkite API access token with `write_builds` access
+* `TRIGGER_API_ACCESS_TOKEN` - a Buildkite API access token with `write_builds` and `read_builds` access
 * `TRIGGER_ORG_SLUG` - the slug of the org
 * `TRIGGER_PIPELINE_SLUG` - the slug of the pipeline
 * `TRIGGER_COMMIT` - the commit for the build (e.g. `HEAD`)
