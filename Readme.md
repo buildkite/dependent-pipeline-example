@@ -1,28 +1,26 @@
 # Buildkite Dependent Pipeline Example
 
-[![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new)
+This repository is an example [Buildkite](https://buildkite.com/) pipeline that shows how to trigger another build pipeline from another pipeline using [Triggers Steps](https://buildkite.com/docs/pipelines/trigger-step).
 
-This repository is an example [Buildkite](https://buildkite.com/) pipeline that shows how to trigger another build pipeline from within a pipeline using the [Create Build API](https://buildkite.com/docs/api/builds#create-a-build).
+## Getting Started
 
-There are two example steps:
+### 1. Create the test pipeline
 
-* [non_blocking.sh](non_blocking.sh) - this creates anoter build and returns a success
-* [blocking.sh](blocking.sh) - this creates a build and waits for it to finish. The step will pass only if the other build passes.
+The test pipeline uses [.buildkite/pipeline.yml](.buildkite/pipeline.yml) to run the tests and trigger deployment builds on the master branch:
 
-## Screenshot
+[![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new?template=https://github.com/buildkite/dependent-pipeline-example/tree/master/templates/test)
 
-<img src="screenshot.png" alt="Screenshot of a dependent pipeline build" width="454" height="603">
+### 2. Create the deployment pipeline
 
-## Environment variables
+The deployment pipeline uses [pipeline.deploy.yml](.buildkite/pipeline.deploy.yml) to perform deployments, and can be run independently of the test pipeline:
 
-These steps require the following environment variables to be set:
+[![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new?template=https://github.com/buildkite/dependent-pipeline-example/tree/master/templates/deploy)
 
-* `TRIGGER_API_ACCESS_TOKEN` - a Buildkite API access token with `write_builds` and `read_builds` access
-* `TRIGGER_ORG_SLUG` - the slug of the org
-* `TRIGGER_PIPELINE_SLUG` - the slug of the pipeline
-* `TRIGGER_COMMIT` - the commit for the build (e.g. `HEAD`)
-* `TRIGGER_BRANCH` - the branch for the build (e.g. `master`)
-* `TRIGGER_MESSAGE` - the message for the build (e.g. `Oh hai :wave:`)
+### 3. Run a build on the test pipeline
+
+Once you’ve created the two pipelines, trigger a build on your test pipeline to see it all in action!
+
+(insert screenshot)
 
 ## License
 
