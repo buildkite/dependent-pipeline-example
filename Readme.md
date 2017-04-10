@@ -1,6 +1,6 @@
 # Buildkite Dependent Pipeline Example
 
-This repository is an example [Buildkite](https://buildkite.com/) pipeline that shows how to trigger another build pipeline using [Triggers Steps](https://buildkite.com/docs/pipelines/trigger-step).
+This repository is an example [Buildkite](https://buildkite.com/) pipeline that shows how to trigger another pipeline using [Triggers Steps](https://buildkite.com/docs/pipelines/trigger-step).
 
 ## Getting Started
 
