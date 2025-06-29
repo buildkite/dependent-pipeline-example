@@ -24,4 +24,4 @@ Once you’ve created the two pipelines, trigger a build on your test pipeline t
 
 ## License
 
-See [Licence.md](Licence.md) (MIT)
+See [LICENSE](LICENSE) (MIT)
