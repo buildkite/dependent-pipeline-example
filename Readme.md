@@ -29,8 +29,6 @@ The deployment pipeline uses [pipeline.deploy.yml](.buildkite/pipeline.deploy.ym
 
 Once you’ve created the two pipelines, trigger a build on your test pipeline to see it all in action!
 
-<img src="screenshot.png" alt="Screenshot of a triggered pipeline build" width="734" height="485">
-
 ## License
 
 See [LICENSE](LICENSE) (MIT)
