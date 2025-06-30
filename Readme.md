@@ -1,6 +1,15 @@
 # Buildkite Dependent Pipeline Example
 
+[![Build status](https://badge.buildkite.com/2c51548da4ca2abd88fa2194dbdf46b916c65047ef03786752.svg)](https://buildkite.com/buildkite/dependent-pipeline-example)
+[![Add to Buildkite](https://img.shields.io/badge/Add%20to%20Buildkite-14CC80)](https://buildkite.com/new)
+
 This repository is an example [Buildkite](https://buildkite.com/) pipeline that shows how to trigger another pipeline using [Triggers Steps](https://buildkite.com/docs/pipelines/trigger-step).
+
+👉 **See this example in action:** [buildkite/dependent-pipeline-example](https://buildkite.com/buildkite/dependent-pipeline-example/builds/latest)
+
+<a href="https://buildkite.com/buildkite/dependent-pipeline-example/builds/latest?branch=main">
+  <img width="2400" alt="Screenshot of example pipeline build page" src=".buildkite/screenshot.png" />
+</a>
 
 ## Getting Started
 
