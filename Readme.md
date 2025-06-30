@@ -5,7 +5,10 @@
 
 This repository is an example [Buildkite](https://buildkite.com/) pipeline that shows how to trigger another pipeline using [Triggers Steps](https://buildkite.com/docs/pipelines/trigger-step).
 
-👉 **See this example in action:** [buildkite/dependent-pipeline-example](https://buildkite.com/buildkite/dependent-pipeline-example/builds/latest)
+👉 **See this example in action:**
+
+- [buildkite/dependent-pipeline-example](https://buildkite.com/buildkite/dependent-pipeline-example/builds/latest?branch=main) - the pipeline that runs tests and triggers the deployment pipeline
+- [buildkite/dependent-pipeline-example-deploy](https://buildkite.com/buildkite/dependent-pipeline-example-deploy/builds/latest?branch=main) - the deployment pipeline that is triggered by [buildkite/dependent-pipeline-example](https://buildkite.com/buildkite/dependent-pipeline-example/builds/latest?branch=main)
 
 <a href="https://buildkite.com/buildkite/dependent-pipeline-example/builds/latest?branch=main">
   <img width="2400" alt="Screenshot of example pipeline build page" src=".buildkite/screenshot.png" />
