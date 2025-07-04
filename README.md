@@ -30,10 +30,12 @@ Each pipeline has its own `pipeline.yml`:
 
 1. **Create the test pipeline**
    Uploads `.buildkite/pipeline.yml` and triggers the deploy pipeline when tests pass:
+
    [![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new?template=https://github.com/buildkite/dependent-pipeline-example/tree/main/templates/test)
 
 2. **Create the deployment pipeline**
    Runs independently or when triggered by the test pipeline:
+
    [![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new?template=https://github.com/buildkite/dependent-pipeline-example/tree/main/templates/deploy)
 
 3. **Trigger a build** on the test pipeline to see it in action!
