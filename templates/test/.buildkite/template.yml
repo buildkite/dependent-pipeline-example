@@ -1,4 +1,8 @@
 name: "Dependent Pipeline Example (Tests)"
+description: "An example pipeline that runs tests and triggers a separate deployment pipeline using a trigger step."
+emoji: ":link:"
+languages:
+  - "YAML"
 steps:
-  - name: ":pipeline:"
+  - label: ":pipeline:"
     command: "buildkite-agent pipeline upload"
