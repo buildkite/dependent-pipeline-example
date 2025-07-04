@@ -1,4 +1,8 @@
 name: "Dependent Pipeline Example (Deploy)"
+description: "An example pipeline that is triggered by another pipeline to perform a deployment."
+emoji: ":rocket:"
+languages:
+  - "YAML"
 steps:
-  - name: ":pipeline:"
+  - label: ":pipeline:"
     command: "buildkite-agent pipeline upload .buildkite/pipeline.deploy.yml"

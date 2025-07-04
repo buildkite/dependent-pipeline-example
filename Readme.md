@@ -6,30 +6,39 @@ This repository is an example [Buildkite](https://buildkite.com/) pipeline that 
 
 👉 **See this example in action:**
 
-- [buildkite/dependent-pipeline-example](https://buildkite.com/buildkite/dependent-pipeline-example/builds/latest?branch=main) - the pipeline that runs tests and triggers the deployment pipeline
-- [buildkite/dependent-pipeline-example-deploy](https://buildkite.com/buildkite/dependent-pipeline-example-deploy/builds/latest?branch=main) - the deployment pipeline that is triggered by [buildkite/dependent-pipeline-example](https://buildkite.com/buildkite/dependent-pipeline-example/builds/latest?branch=main)
+- [Test pipeline](https://buildkite.com/buildkite/dependent-pipeline-example/builds/latest?branch=main) — runs tests and triggers the deployment
+- [Deployment pipeline](https://buildkite.com/buildkite/dependent-pipeline-example-deploy/builds/latest?branch=main) — triggered by the test pipeline
 
 <a href="https://buildkite.com/buildkite/dependent-pipeline-example/builds/latest?branch=main">
-  <img width="2400" alt="Screenshot of example pipeline build page" src=".buildkite/screenshot.png" />
+  <img width="2400" alt="Screenshot of dependent pipeline build page" src=".buildkite/screenshot.png" />
 </a>
 
-## Getting Started
+<!-- docs:start -->
 
-### 1. Create the test pipeline
+## How it works
 
-The test pipeline uses [.buildkite/pipeline.yml](.buildkite/pipeline.yml) to run the tests and trigger deployment builds on the main branch:
+This example consists of two separate pipelines:
 
-[![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new?template=https://github.com/buildkite/dependent-pipeline-example/tree/main/templates/test)
+- The **Test pipeline** runs tests and then uses a [trigger step](https://buildkite.com/docs/pipelines/trigger-step) to trigger the deployment pipeline.
+- The **Deployment pipeline** runs independently and can also be triggered manually.
 
-### 2. Create the deployment pipeline
+Each pipeline has its own `pipeline.yml`:
+- `.buildkite/pipeline.yml` — defines the test pipeline, including the trigger step
+- `.buildkite/pipeline.deploy.yml` — defines the deployment pipeline
 
-The deployment pipeline uses [pipeline.deploy.yml](.buildkite/pipeline.deploy.yml) to perform deployments, and can be run independently of the test pipeline:
+## Setup
 
-[![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new?template=https://github.com/buildkite/dependent-pipeline-example/tree/main/templates/deploy)
+1. **Create the test pipeline**
+   Uploads `.buildkite/pipeline.yml` and triggers the deploy pipeline when tests pass:
+   [![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new?template=https://github.com/buildkite/dependent-pipeline-example/tree/main/templates/test)
 
-### 3. Run a build on the test pipeline
+2. **Create the deployment pipeline**
+   Runs independently or when triggered by the test pipeline:
+   [![Add to Buildkite](https://buildkite.com/button.svg)](https://buildkite.com/new?template=https://github.com/buildkite/dependent-pipeline-example/tree/main/templates/deploy)
 
-Once you’ve created the two pipelines, trigger a build on your test pipeline to see it all in action!
+3. **Trigger a build** on the test pipeline to see it in action!
+
+<!-- docs:end -->
 
 ## License
 
