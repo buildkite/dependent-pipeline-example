@@ -10,8 +10,14 @@ This repository is an example [Buildkite](https://buildkite.com/) pipeline that 
 - [Deployment pipeline](https://buildkite.com/buildkite/dependent-pipeline-example-deploy/builds/latest?branch=main) — triggered by the test pipeline
 
 <a href="https://buildkite.com/buildkite/dependent-pipeline-example/builds/latest?branch=main">
-  <img width="2400" alt="Screenshot of dependent pipeline build page" src=".buildkite/screenshot.png" />
+  <img width="2400" alt="Screenshot of the test pipeline build page" src=".buildkite/test-pipeline.png" />
 </a>
+<p align="left"><i>Test pipeline: runs tests and triggers deployment</i></p>
+
+<a href="https://buildkite.com/buildkite/dependent-pipeline-example-deploy/builds/latest?branch=main">
+  <img width="2400" alt="Screenshot of the deployment pipeline build page" src=".buildkite/deployment-pipeline.png" />
+</a>
+<p align="left"><i>Deployment pipeline: triggered by the test pipeline</i></p>
 
 <!-- docs:start -->
 
