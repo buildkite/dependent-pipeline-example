@@ -32,6 +32,8 @@ Each pipeline has its own `pipeline.yml`:
 
 ## Setup
 
+See the full [Getting Started Guide](https://buildkite.com/docs/guides/getting-started) for step-by-step instructions on how to get this running, or try it yourself:
+
 1. **Create the test pipeline**
    Uploads `.buildkite/pipeline.yml` and triggers the deploy pipeline when tests pass:
 
